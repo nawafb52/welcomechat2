@@ -5,7 +5,14 @@ client.on('guildMemberAdd', member => {
 const mohamed= member.guild.channels.get("572069102441725974");
 if(!mohamed) return;
 if(mohamed) {
-setTimeout(() => mohamed.send(`**__Ꮃ__elcome __Ꭲ__o __Ꮪ__erver __V__EGAS**`), 4000)        
+setTimeout(() => mohamed.send(`**You Are In Vegas**`), 4000)        
+}
+});
+client.on('guildMemberAdd', member => {
+const mohamed= member.guild.channels.get("572069102441725974");
+if(!mohamed) return;
+if(mohamed) {
+setTimeout(() => mohamed.send(`**__.__**`), 10)        
 }
 });
  const devs = ['559402149285724210' , '' , ''];
