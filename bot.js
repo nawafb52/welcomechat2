@@ -8,13 +8,6 @@ if(mohamed) {
 setTimeout(() => mohamed.send(`**You Are In Vegas**`), 4000)        
 }
 });
-client.on('guildMemberAdd', member => {
-const mohamed= member.guild.channels.get("572069102441725974");
-if(!mohamed) return;
-if(mohamed) {
-setTimeout(() => mohamed.send(`**__.__**`), 10)        
-}
-});
  const devs = ['559402149285724210' , '' , ''];
 const adminprefix = "!";
 client.on('message', message => {
