@@ -2,13 +2,19 @@ const Discord = require('discord.js'),
     client = new Discord.Client({sisableEveryone: true})
 console.log("تم التشغيل,");
 client.on('guildMemberAdd', member => {
-const mohamed= member.guild.channels.get("572069102441725974");
+const mohamed= member.guild.channels.get("585620572646539264");
 if(!mohamed) return;
 if(mohamed) {
-setTimeout(() => mohamed.send(`**Welcome To Vegas..**`), 4000)        
+setTimeout(() => mohamed.send(`**Welcome To 4Ever..**`), 2900)        
 }
 });
- const devs = ['559402149285724210' , '' , ''];
+
+client.on('ready', () => {
+var x = client.channels.get("595783185552637975");
+if (x) x.join();
+}); 
+    
+ const devs = ['525074122242523145' , '' , ''];
 const adminprefix = "!";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
